@@ -20,10 +20,18 @@ export class TwtrFeedsService {
         homeUrl: 'https://www.aei.org/profile/scott-gottlieb/'
       },
       {
+        name: 'Dr. Tom Frieden',
+        title: 'President & CEO @ResolveTSL; Sr Fellow @CFR_org',
+        page: 'scientist',
+        order: 2,
+        url: 'https://twitter.com/DrTomFrieden',
+        homeUrl: 'https://www.drtomfrieden.net/'
+      },
+      {
         name: 'Michael Osterholm',
         title: 'Director of Center for Infectious Disease Research at University of Minnesota',
         page: 'scientist',
-        order: 2,
+        order: 3,
         url: 'https://twitter.com/mtosterholm',
         homeUrl: 'https://cidrap.umn.edu'
       },
@@ -31,7 +39,7 @@ export class TwtrFeedsService {
         name: 'Dr. Jen Ashton',
         title: 'ABC News Chief Medical Correspondent',
         page: 'scientist',
-        order: 3,
+        order: 4,
         url: 'https://twitter.com/DrJAshton',
         homeUrl: 'https://jenniferashtonmd.com'
       },
