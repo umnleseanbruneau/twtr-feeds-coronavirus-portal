@@ -35,7 +35,7 @@ export class TwtrFeedsService {
         url: 'https://twitter.com/mtosterholm',
         homeUrl: 'https://cidrap.umn.edu'
       },
-      {
+/*      {
         name: 'Dr. Jen Ashton',
         title: 'ABC News Chief Medical Correspondent',
         page: 'scientist',
@@ -43,6 +43,7 @@ export class TwtrFeedsService {
         url: 'https://twitter.com/DrJAshton',
         homeUrl: 'https://jenniferashtonmd.com'
       },
+*/
       {
         name: 'Institute for Health Metrics and Evaluation',
         title: 'University of Washington',

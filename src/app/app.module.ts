@@ -14,6 +14,9 @@ import { ScientistComponent } from './components/scientist/scientist.component';
 import { MediaComponent } from './components/media/media.component';
 import { CompanyComponent } from './components/company/company.component';
 import { TwtrFeedsService } from './services/twtr-feeds.service';
+import { PeopleComponent } from './components/people/people.component';
+import { LinksComponent } from './components/links/links.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { TwtrFeedsService } from './services/twtr-feeds.service';
     OrgComponent,
     ScientistComponent,
     MediaComponent,
-    CompanyComponent
+    CompanyComponent,
+    PeopleComponent,
+    LinksComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
