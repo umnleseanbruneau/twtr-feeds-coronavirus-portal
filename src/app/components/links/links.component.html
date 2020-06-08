@@ -1,13 +1,13 @@
 <div id="links" class="container-fluid">
-  <div class="display-3">COVID-19 Data Models</div>
-  <hr>
+  <div class="pt-3 pl-3">NOTE: Click on individual HTML card to follow link</div>
 
-  <!-- link to be added later -->
-  <!-- 
+  <!-- COVID-19 Models -->
+  <div class="display-5 pt-5 pl-3"><strong>COVID-19 Data Models</strong></div>
+  <hr>
   <div class="row">
-    <div *ngFor="let h of scientistTwitterList" class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
-      <div class="card">
-          <div class="card-header" (click)="goHomeUrl(h.homeUrl)">
+    <div *ngFor="let h of extLinkModelList" class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+      <div class="card" (click)="goUrl(h.url)">
+          <div class="card-header">
               <div>{{ h.name }}</div>
               <div *ngIf="h.title">
                 <div  class="title">
@@ -16,18 +16,45 @@
               </div>
           </div>
           <div class="card-body">
-              <a
-              class="twitter-timeline"
-              data-width="800"
-              data-height="1500"
-              data-theme="dark"
-              href="{{ h.url }}"
-            >
-              Tweets by {{ h.name }}</a
-            >      
+            <ul>
+              <div class="linkdesc">Description:</div>
+              <li *ngFor="let c of h.description">
+                <div class="linkcomment">
+                  {{ c.comment }}
+                </div>
+              </li>
+            </ul>
           </div>
       </div>
     </div>
   </div>
-  -->
+
+  <!-- COVID-19 News Articles -->
+  <div class="display-5 pt-5 pl-3"><strong>COVID-19 Sites or News Articles</strong></div>
+  <hr>
+  <div class="row">
+    <div *ngFor="let h of extLinkArticleList" class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+      <div class="card" (click)="goUrl(h.url)">
+          <div class="card-header">
+              <div>{{ h.name }}</div>
+              <div *ngIf="h.title">
+                <div  class="title">
+                  {{ h.title }}
+                </div>
+              </div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <div class="linkdesc">Description:</div>
+              <li *ngFor="let c of h.description">
+                <div class="linkcomment">
+                  {{ c.comment }}
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
 </div>

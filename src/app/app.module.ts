@@ -13,10 +13,12 @@ import { OrgComponent } from './components/org/org.component';
 import { ScientistComponent } from './components/scientist/scientist.component';
 import { MediaComponent } from './components/media/media.component';
 import { CompanyComponent } from './components/company/company.component';
-import { TwtrFeedsService } from './services/twtr-feeds.service';
 import { PeopleComponent } from './components/people/people.component';
 import { LinksComponent } from './components/links/links.component';
 import { AboutComponent } from './components/about/about.component';
+import { TwtrFeedsService } from './services/twtr-feeds.service';
+import { ExtLinksService } from './services/ext-links.service';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { AboutComponent } from './components/about/about.component';
   ],
   providers: [
     TwtrFeedsService,
+    ExtLinksService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
