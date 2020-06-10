@@ -40,10 +40,41 @@ export class ExtLinksService {
         ]        
       },
       {
+        name: 'Rt COVID-19',
+        title: 'Measure to determine if virus is spreading or subsiding',
+        page: 'model',
+        order: 3,
+        url: 'https://rt.live/',
+        description: [
+          {
+            comment: 'State rate of virus spread'
+          }, {
+            comment: 'Rt greater than 1.0 means virus is spreading'
+          }, {
+            comment: 'Rt less than 1.0 means virus is subsiding'
+          }
+        ]        
+      },
+      {
+        name: 'AEI COVID-19 Action Trackers',
+        title: 'Twitter - @COVID2019action',
+        page: 'article',
+        order: 1,
+        url: 'https://www.aei.org/covid-2019-action-tracker/',
+        description: [
+          {
+            comment: 'by Dr. Scott Gottlieb and his research assistant'
+          },
+          {
+            comment: 'Maps updated daily - great national view'
+          }
+        ]        
+      },
+      {
         name: 'MN Dept of Health COVID-19 Situation Update',
         title: 'Daily numbers for tests, positive cases, hospitalizations, deaths and more',
         page: 'article',
-        order: 1,
+        order: 2,
         url: 'https://www.health.state.mn.us/diseases/coronavirus/situation.html',
         description: [
           {
@@ -57,7 +88,7 @@ export class ExtLinksService {
         name: 'IMHE - Minnesota Projection',
         title: 'IMHE at University of Washington',
         page: 'article',
-        order: 2,
+        order: 3,
         url: 'https://covid19.healthdata.org/united-states-of-america/minnesota',
         description: [
           {
@@ -69,7 +100,7 @@ export class ExtLinksService {
         name: 'Individual Choice',
         title: 'no wrong is done to one who consents',
         page: 'article',
-        order: 3,
+        order: 4,
         url: 'https://thehill.com/opinion/civil-rights/496339-individual-choice-will-be-the-key-to-economic-recovery-after-the-crisis#.XsZjlFwQ_sM.twitter',
         description: [
           {
