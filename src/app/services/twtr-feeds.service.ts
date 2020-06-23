@@ -179,7 +179,32 @@ export class TwtrFeedsService {
         order: 2,
         url: 'https://twitter.com/merck',
         homeUrl: 'https://merck.com'
+      },
+      {
+        name: 'Australia - National',
+        title: 'Australian Government Department of Health',
+        page: 'intl',
+        order: 1,
+        url: 'https://twitter.com/healthgovau',
+        homeUrl: 'https://www.health.gov.au'
+      },
+      {
+        name: 'South Australia - State',
+        title: 'SA Health',
+        page: 'intl',
+        order: 2,
+        url: 'https://twitter.com/SAHealth',
+        homeUrl: 'https://www.sahealth.sa.gov.au/'
+      },
+      {
+        name: 'United Kingdom - Public Health',
+        title: 'Public Health England',
+        page: 'intl',
+        order: 3,
+        url: 'https://twitter.com/DHSCgovuk',
+        homeUrl: 'https://www.gov.uk/government/organisations/public-health-england'
       }
+      
     ];
 
    }
@@ -205,6 +230,15 @@ export class TwtrFeedsService {
    getStateFeeds(): TwitterHandle[] { 
     
     this.filteredTwitterFeeds = this.allTwitterFeeds.filter(r => r.page === "state");
+    
+    this.rankedTwitterFeeds = this.sortByKey(this.filteredTwitterFeeds, 'order');
+
+     return this.rankedTwitterFeeds;
+   }
+
+   getIntlFeeds(): TwitterHandle[] { 
+    
+    this.filteredTwitterFeeds = this.allTwitterFeeds.filter(r => r.page === "intl");
     
     this.rankedTwitterFeeds = this.sortByKey(this.filteredTwitterFeeds, 'order');
 

@@ -9,6 +9,7 @@ import { TwitterHandle } from 'src/app/models/TwtrHandle';
 })
 export class StateComponent implements OnInit {
   stateTwitterList: TwitterHandle[];
+  intlTwitterList: TwitterHandle[];
 
   constructor(private stateListService: TwtrFeedsService) {
 
@@ -16,6 +17,7 @@ export class StateComponent implements OnInit {
 
   ngOnInit(): void {
     this.stateTwitterList = this.stateListService.getStateFeeds();
+    this.intlTwitterList = this.stateListService.getIntlFeeds();
     setTimeout(function() {
       (<any>window).twttr.widgets.load();
     }, 3000);
@@ -26,3 +28,4 @@ export class StateComponent implements OnInit {
     window.open(homeUrl, '_blank');
   }
 }
+
