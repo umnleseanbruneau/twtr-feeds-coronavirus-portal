@@ -26,10 +26,22 @@ export class ExtLinksService {
         ]
       },
       {
+        name: 'The COVID Tracking Project',
+        title: 'The Atlantic',
+        page: 'model',
+        order: 2,
+        url: 'https://covidtracking.com/data/download',
+        description: [
+          {
+            comment: 'Nice data set for all states'
+          }
+        ]        
+      },
+      {
         name: 'Minnesota COVID-19 Model',
         title: 'Github repo for U of M Model 3',
         page: 'model',
-        order: 2,
+        order: 3,
         url: 'https://github.com/MN-COVID19-Model',
         description: [
           {
@@ -43,7 +55,7 @@ export class ExtLinksService {
         name: 'Rt COVID-19',
         title: 'Measure to determine if virus is spreading or subsiding',
         page: 'model',
-        order: 3,
+        order: 4,
         url: 'https://rt.live/',
         description: [
           {
@@ -56,10 +68,22 @@ export class ExtLinksService {
         ]        
       },
       {
+        name: 'The COVID Tracking Project',
+        title: 'The Atlantic Monthly Group',
+        page: 'article',
+        order: 1,
+        url: 'https://covidtracking.com/',
+        description: [
+          {
+            comment: 'Volunteers who publish COVID-19 data'
+          }
+        ]        
+      },
+      {
         name: 'AEI COVID-19 Action Trackers',
         title: 'Twitter - @COVID2019action',
         page: 'article',
-        order: 1,
+        order: 2,
         url: 'https://www.aei.org/covid-2019-action-tracker/',
         description: [
           {
@@ -74,7 +98,7 @@ export class ExtLinksService {
         name: 'MN Dept of Health COVID-19 Situation Update',
         title: 'Daily numbers for tests, positive cases, hospitalizations, deaths and more',
         page: 'article',
-        order: 2,
+        order: 3,
         url: 'https://www.health.state.mn.us/diseases/coronavirus/situation.html',
         description: [
           {
@@ -88,7 +112,7 @@ export class ExtLinksService {
         name: 'IMHE - Minnesota Projection',
         title: 'IMHE at University of Washington',
         page: 'article',
-        order: 3,
+        order: 4,
         url: 'https://covid19.healthdata.org/united-states-of-america/minnesota',
         description: [
           {
@@ -100,7 +124,7 @@ export class ExtLinksService {
         name: 'Individual Choice',
         title: 'no wrong is done to one who consents',
         page: 'article',
-        order: 4,
+        order: 5,
         url: 'https://thehill.com/opinion/civil-rights/496339-individual-choice-will-be-the-key-to-economic-recovery-after-the-crisis#.XsZjlFwQ_sM.twitter',
         description: [
           {
