@@ -109,10 +109,22 @@ export class ExtLinksService {
         ]        
       },
       {
+        name: 'Federal Reserve Bank of Minneapolis',
+        title: 'Ninth District',
+        page: 'article',
+        order: 4,
+        url: 'https://www.minneapolisfed.org/region-and-community/regional-economic-indicators/covid-19-and-the-ninth-district-economy-a-dashboard',
+        description: [
+          {
+            comment: 'COVID-19 and the Ninth District ecomony: A dashboard'
+          }
+        ]        
+      },
+      {
         name: 'IMHE - Minnesota Projection',
         title: 'IMHE at University of Washington',
         page: 'article',
-        order: 4,
+        order: 5,
         url: 'https://covid19.healthdata.org/united-states-of-america/minnesota',
         description: [
           {
@@ -124,7 +136,7 @@ export class ExtLinksService {
         name: 'Individual Choice',
         title: 'no wrong is done to one who consents',
         page: 'article',
-        order: 5,
+        order: 6,
         url: 'https://thehill.com/opinion/civil-rights/496339-individual-choice-will-be-the-key-to-economic-recovery-after-the-crisis#.XsZjlFwQ_sM.twitter',
         description: [
           {

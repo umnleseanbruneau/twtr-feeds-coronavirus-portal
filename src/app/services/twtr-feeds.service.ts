@@ -12,7 +12,7 @@ export class TwtrFeedsService {
   constructor() {
     this.allTwitterFeeds = [
       {
-        name: 'Scott Gottlieb',
+        name: 'Dr. Scott Gottlieb',
         title: 'Resident Fellow at @AEI; Partner @NEA; CNBC Contributor',
         page: 'scientist',
         order: 1,
@@ -28,7 +28,7 @@ export class TwtrFeedsService {
         homeUrl: 'https://www.drtomfrieden.net/'
       },
       {
-        name: 'Michael Osterholm',
+        name: 'Dr. Michael Osterholm',
         title: 'Director of Center for Infectious Disease Research at University of Minnesota',
         page: 'scientist',
         order: 3,
